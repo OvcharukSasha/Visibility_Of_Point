@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>visibility polygon</title>
+  
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="fabric.js"></script>
+  
+</head>
+
+<body oncontextmenu="return false" onload="init()">
+
+  <body onmousedown="return false" >
+
+<div align="center" oncontextmenu="LastPoint()">
+  <canvas id="canvas" width="1400" height="650" ></canvas>
+  </div>
+  
+<div class="context" align="left">
+ <button class="button button1" onclick="resetField()">Очистити поле</button>
+</div>
+<div class="context" align="right" >
+  	
+  		<label class="space" for="numbers">
+  	Кількість сторін простого многокутника: 
+  </label>
+
+  		<input type="number" id="numbers" name="numberss"
+       min="3"  max="100000">
+       <button type="submit" class="button button1" onclick="makePolygon()">OK</button>
+       <button type="submit" class="button button1" onclick="drawPoint()">Додати точку</button>
+
+   </div>
+ 
+      <span align="left"  id="coord"></span>
+  
+      <span align="center" id="inside"></span>
+
+ 
+</body>
+  <script src='https://codepen.io/frankcastro/pen/ByWwzL.js'></script>
+
+  
+
+    <script  src="index.js"></script>
+
+
+
+
+</body>
+
+</html>
